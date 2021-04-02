@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-mobile {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #FFF;
+  transition: 0.2s ease-in-out;
+  z-index: 99999;
+}
+
+.close-btn-mobile-box {
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn-mobile {
+  font-family: Oswald;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.menu-mobile-content {
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.menu-mobile-content > a {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #530099;
+  font-size: 1.5rem;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+.header-background {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/webdev.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  background-color: #530099aa;
+  position: relative;
+}
+
+.btn-menu-mobile {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-menu-mobile > div {
+  width: 100%;
+  height: 6px;
+  background-color: #FFF;
+  border-radius: 50px;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box {
+  width: 30%;
+}
+
+.logo-box > p {
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 3rem;
+}
+
+.navbar-menu {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar-menu > div > a {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-menu > div > a:hover {
+  background-color: #FFFFFF22;
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-phrase, .header-image {
+  width: 48%;
+}
+
+.header-phrase > p {
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 1.1rem;
+}
+
+.header-image > img {
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+.header-image > img:hover {
+  box-shadow: 0 0 15px #00000099;
+}
+
+.section-box {
+  width: 100%;
+  padding: 2rem;
+}
+
+.section-header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+}
+
+.section-title {
+  text-align: center;
+  font-family: Oswald;
+  font-size: 2.5rem;
+}
+
+.sobre-content, .produtos-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.sobre-row {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sobre-row > p {
+  width: 58%;
+  font-family: Raleway;
+}
+
+.sobre-row-image {
+  width: 40%;
+  height: 300px;
+  background-color: #DDD;
+}
+
+#produtos {
+  background-color: #530099;
+}
+
+#produtos .section-title {
+  color: #FFF;
+}
+
+.produtos-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  padding: 1rem;
+  background-color: #33005e;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px -3px #000;
+  transform: scale(1.03);
+}
+
+.card-header, .card-body {
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+}
+
+.card-header {
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-family: Oswald;
+}
+
+.card-description {
+  font-family: Raleway;
+}
+
+.footer {
+  background-color: #222;
+  color: #FFF;
+}
+
+.contato-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.contato-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-form > input[type=text], .contato-form > input[type=email] {
+  width: 100%;
+  height: 50px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #333;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+.contato-form > input[type=text]:focus, .contato-form > input[type=email]:focus {
+  background-color: #1d1d1d;
+}
+
+.contato-form > textarea {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #333;
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 1rem;
+  resize: none;
+  transition: 0.2s ease-in-out;
+}
+
+.contato-form > textarea:focus {
+  background-color: #1d1d1d;
+}
+
+.contato-form > input[type=submit] {
+  width: 100%;
+  max-width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 1rem;
+  background-color: #333;
+  color: #FFF;
+  font-size: 1rem;
+  font-family: Raleway;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.contato-form > input[type=submit]:hover {
+  background-color: #1d1d1d;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column-reverse;
+    margin-top: 5rem;
+  }
+
+  .header-content > div {
+    width: 100%;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .btn-menu-mobile {
+    display: flex;
+  }
+
+  .sobre-row {
+    flex-direction: column;
+  }
+  
+  .sobre-row > p, .sobre-row > div {
+    width: 100%;
+  }
+
+  .sobre-row > p {
+    margin-bottom: 0.5rem;
+  }
+
+  .reverse-sobre-col {
+    flex-direction: column-reverse;
+  }
+
+  .produtos-row {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}
